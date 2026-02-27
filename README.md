@@ -557,12 +557,12 @@ A thorough assessment of cybersecurity tools necessitates looking at their detec
 
 ## Reconnaissance Tools Analysis and Comparison
 
-<img width="300" height="500" alt="task1table" src="https://github.com/user-attachments/assets/47885145-0195-4493-a6b5-75f32edbc206" />
+<img width="350" height="500" alt="task1table" src="https://github.com/user-attachments/assets/47885145-0195-4493-a6b5-75f32edbc206" />
 
 
 ## Maintaining Access Tools Analysis
 
-<img width="300" height="500" alt="task2table" src="https://github.com/user-attachments/assets/3ab3c6b8-79b9-4d55-ad68-38f7aa5a520b" />
+<img width="350" height="500" alt="task2table" src="https://github.com/user-attachments/assets/3ab3c6b8-79b9-4d55-ad68-38f7aa5a520b" />
 
 ## Reference
 
