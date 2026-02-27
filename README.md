@@ -81,13 +81,39 @@ ___
 
 <img width="756" height="214" alt="image" src="https://github.com/user-attachments/assets/fcca2079-1f81-4f26-ba8b-e660dd2c6461" />
 
-**Switching Context**: The command workspaces select target1 activates your specific project environment.
+**Switching Context**: The command "workspaces select target1" activates your specific project environment.
 
 **Visual Feedback**: Your terminal prompt changes (e.g., from [default] to [target1]), so you always know exactly which target you are currently modifying.
 
-**Inventory Management**: Running workspaces list displays a table of all your projects.
+**Inventory Management**: Running "workspaces list" displays a table of all your projects.
 
 **Audit Trail**: The list includes last modification dates, helping you track when you last worked on a specific investigation.
+
+___
+**Feature 2: Marketplace and Modular Architecture**
+
+<img width="527" height="330" alt="image" src="https://github.com/user-attachments/assets/3ce03f9e-1cdb-446d-a5bb-ae28bcc29645" />
+
+**The Command**: Running "marketplace install all" downloads the complete library of Recon-ng modules at once.
+
+**Feature Access**: This unlocks the full suite of tools, including Discovery (finding sensitive files) and Exploitation (testing vulnerabilities like command injection).
+
+**Efficiency**: Bulk installation ensures your environment is fully equipped for a deep-dive investigation without having to stop and download modules one by one.
+
+**Preparation**: This is the standard "loadout" step to prepare Kali Linux for a comprehensive reconnaissance phase.
+
+<img width="932" height="609" alt="image" src="https://github.com/user-attachments/assets/e6700cf3-0643-497a-87a2-ce8301f579ad" />
+
+**Targeted Install**: The command "marketplace install recon/domains-hosts/hackertarget" downloads one specific tool instead of the entire library.
+
+**Configuration Check**: After installation, the framework automatically audits the module to see if it’s ready to run.
+
+**The "Red Text" Warning**: This is the API Key Check. it flags modules (like Shodan) that need external credentials to pull data.
+
+**Critical Feedback**: These warnings prevent "silent failures," letting you know exactly which keys you need to add before the module can successfully gather intelligence.
+
+___
+**Feature 3: Automated Domain Enumeration**
 
 
 
