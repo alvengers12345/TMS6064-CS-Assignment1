@@ -79,7 +79,7 @@ ___
 
 **Context**: Once created, your command prompt will change to show you are now working inside that specific workspace.
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/fcca2079-1f81-4f26-ba8b-e660dd2c6461" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/1887cb28-303c-4058-b94b-037d448ad1a4" />
 
 **Switching Context**: The command "workspaces select target1" activates your specific project environment.
 
@@ -92,7 +92,8 @@ ___
 ___
 **Feature 2: Marketplace and Modular Architecture**
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/3ce03f9e-1cdb-446d-a5bb-ae28bcc29645" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/5eecb3b3-4065-45be-9dcd-2b3233716471" />
+
 
 **The Command**: Running "marketplace install all" downloads the complete library of Recon-ng modules at once.
 
@@ -102,7 +103,8 @@ ___
 
 **Preparation**: This is the standard "loadout" step to prepare Kali Linux for a comprehensive reconnaissance phase.
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/e6700cf3-0643-497a-87a2-ce8301f579ad" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/14d24210-c759-4eea-94f2-528b90b430b4" />
+
 
 **Targeted Install**: The command "marketplace install recon/domains-hosts/hackertarget" downloads one specific tool instead of the entire library.
 
@@ -118,6 +120,8 @@ ___
 <img width="476" height="299" alt="1" src="https://github.com/user-attachments/assets/db754b7b-b08a-494f-931f-c115e950d56c" />
 
 
+
+**Nmap**
 
 
 
