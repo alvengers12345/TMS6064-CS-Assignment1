@@ -102,7 +102,7 @@ ___
 
 **Preparation**: This is the standard "loadout" step to prepare Kali Linux for a comprehensive reconnaissance phase.
 
-<img width="932" height="609" alt="image" src="https://github.com/user-attachments/assets/e6700cf3-0643-497a-87a2-ce8301f579ad" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/e6700cf3-0643-497a-87a2-ce8301f579ad" />
 
 **Targeted Install**: The command "marketplace install recon/domains-hosts/hackertarget" downloads one specific tool instead of the entire library.
 
