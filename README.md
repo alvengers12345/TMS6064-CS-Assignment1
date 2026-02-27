@@ -23,7 +23,7 @@ This assignment demonstrates the use of:
 - DNSRecon
 ---
 
-#**Recon-ng**
+## Recon-ng
 
 **What it is**: A Python-based tool for gathering public information (OSINT).
 
