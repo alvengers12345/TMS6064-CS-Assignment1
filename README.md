@@ -344,7 +344,7 @@ ___
 ___
 **Feature 3: Code Execution (Antivirus Bypass)**
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/472a237d-c946-469d-a0ee-32d175e3bac7" />
+<img width="500" height="299" alt="image" src="https://github.com/user-attachments/assets/472a237d-c946-469d-a0ee-32d175e3bac7" />
 
 **Script Deployment:** Uses the command Import-Module ./CodeExecution/Invoke-Shellcode.ps1 to load a specialized script into the environment.
 
@@ -377,7 +377,7 @@ A web shell is a malicious script and it is usually written in web programming l
 ___
 **Feature 2: Stealthy Reverse Shell Connectivity**
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/c819cea6-dd90-4cf7-9a24-f6f39aecc2e7" />
+<img width="500" height="299" alt="image" src="https://github.com/user-attachments/assets/c819cea6-dd90-4cf7-9a24-f6f39aecc2e7" />
 
 **Payload Review**: Uses the command cat /usr/share/webshells/php/php-reverse-shell.php to inspect and configure the pre-installed reverse shell script.
 
@@ -391,7 +391,7 @@ ___
 ___
 **Feature 3: File System Navigation & Data Exfiltration**
 
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/847719ff-a817-4771-883f-33096975de77" />
+<img width="500" height="299" alt="image" src="https://github.com/user-attachments/assets/847719ff-a817-4771-883f-33096975de77" />
 
 **Directory Access**: Executes http://127.0.0.1/shell.php?cmd=ls%20-l%20/etc/ to gain access to the /etc/ directory and list its contents.
 
@@ -580,20 +580,35 @@ Once perimeter defenses are breached, the focus shifts to Maintaining Access. Pe
 ## Reference
 
 Alex-sector. (2017). Dns2tcp: A tool for relaying TCP connections over DNS (Version 0.5.2) [Computer software]. GitHub. https://github.com/alex-sector/dns2tcp
+
 CyberLabs007. (n.d.). Hping3: Firewall testing and traceroute mode [Video]. YouTube. https://www.youtube.com/watch?v=B4FwRo4a6Qg
+
 Farm9. (2000). Cryptcat [Computer software]. SourceForge. https://cryptcat.sourceforge.io/
+
 HackerTarget. (n.d.). Recon-ng tutorial. https://hackertarget.com/recon-ng-tutorial/
+
 HackerSploit. (2019). Recon-ng - Commands, workspaces and data management [Video]. YouTube. https://www.youtube.com/watch?v=oSt6WdTaCV4
+
 Infoblox. (n.d.). Analysis on popular DNS tunneling tools. Infoblox Community. https://www.infoblox.com/blog/community/analysis-on-popular-dns-tunneling-tools/
+
 InfoSec Pat. (2025). How hackers chat in private (SECURELY!) | Cryptcat [Video]. YouTube. https://www.youtube.com/watch?v=fNc3W_bEpok
+
 Lyon, G. F. (2009). Nmap network scanning: The official Nmap project guide to network discovery and security scanning. Nmap Project.
+
 Perez, C. (n.d.). DNSRecon [Computer software]. GitHub. https://github.com/darkoperator/dnsrecon
+
 Pinna, E. (n.d.). Weevely3 [Computer software]. GitHub. https://github.com/epinna/weevely3
+
 Sanfilippo, S. (n.d.). Hping3 [Computer software]. FreeBSD Manual Pages. https://man.freebsd.org/cgi/man.cgi?query=hping3&sektion=8&format=html
+
 Tomes, T. (n.d.). Recon-ng [Computer software]. GitHub. https://github.com/lanmaster53/recon-ng
+
 Kali Linux. (n.d.). Kali Linux tools directory. Offensive Security. https://www.kali.org/tools/
+
 Nmap.org. (n.d.). Nmap reference guide. Nmap Security Scanner. https://nmap.org/book/man.html
+
 Tutonics. (n.d.). Encrypted data transfer using Cryptcat. https://tutonics.com/articles/encrypted-data-transfer-using-cryptcat/
+
 U.S. Department of Defense. (2021). DoD cyber table top guide (v2). Chief Information Officer. https://www.cto.mil/wp-content/uploads/2023/06/DoD-Cyber-Table-Top-Guide-v2-2021.pdf
 
 
