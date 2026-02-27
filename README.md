@@ -71,7 +71,7 @@ ___
 
 <img width="476" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
 
-**The Command**: Running workspaces create target1 sets up a fresh, isolated environment.
+**The Command**: Running "workspaces create target1" sets up a fresh, isolated environment.
 
 **Data Separation**: It creates a dedicated SQLite database specifically for "target1."
 
