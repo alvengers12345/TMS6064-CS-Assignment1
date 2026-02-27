@@ -203,16 +203,23 @@ ___
 <img width="892" height="178" alt="image" src="https://github.com/user-attachments/assets/fcab5759-4d36-4326-8018-505ca7e73206" />
 
 **Targeted Packet Crafting**: Executes sudo hping3 -S -p 80 -c 1 scanme.nmap.org to send a single TCP SYN packet (-S) specifically to port 80 (-p 80).
+
 **Response Analysis**: Receives a response containing the flags=SA (SYN-ACK) header, which serves as technical confirmation that the port is open.
+
 **Connection Readiness**: Validates that the targeted service is active and ready to accept incoming network connections.
+
 **Stealthy Identification**: Provides a method for identifying open ports that is less conspicuous than establishing a full TCP three-way handshake.
 
 <img width="648" height="432" alt="image" src="https://github.com/user-attachments/assets/3291b632-0354-459a-8be8-7278c820e2e1" />
 
 **Network Path Mapping**: Employs hping3 to conduct a traceroute, visualizing the specific route packets take to reach the target.
+
 **Command Configuration**: Executes sudo hping3 --traceroute -V -1 -c 10 scanme.nmap.org, utilizing the --traceroute flag combined with ICMP mode (-1).
+
 **Detailed Diagnostics**: Sends a sequence of 10 packets (-c 10) while enabling verbose output (-V) for granular data collection.
+
 **Hop Analysis**: Enables the penetration tester to monitor the responsiveness of each individual hop along the network path.
+
 **Infrastructure Detection**: Facilitates the identification of the network route, aiding in the discovery of intermediate devices or potential firewalls.
 
 
