@@ -1,3 +1,6 @@
+"This project is for educational purposes only. All testing was performed in a
+controlled environment or on authorized targets."
+
 # TMS6064-CS-Assignment1
 TMS6064/TMV6064 Cyber Security Assignment 1 (10%) Due before 28 February, Saturday, 9:00 AM
 # TMS6064/TMV6064 Cyber Security
@@ -559,10 +562,20 @@ A thorough assessment of cybersecurity tools necessitates looking at their detec
 
 <img width="350" height="500" alt="task1table" src="https://github.com/user-attachments/assets/47885145-0195-4493-a6b5-75f32edbc206" />
 
+The use of these reconnaissance tools shows a shift from passive intelligence gathering to active network engagement. Recon-ng leads the early reconnaissance phase by creating a preliminary threat profile through the global OSINT ecosystem without directly contacting the target. After identifying external IP ranges and domains, DNSRecon converts these domains into usable IP addresses while revealing the underlying routing infrastructure. Nmap then serves as a detailed diagnostic tool, checking the identified hosts to classify running services and operating systems. Finally, when strong perimeter defenses block standard scans, Hping3 offers the precise packet manipulation needed to bypass filtering rules and effectively map internal state tables.
+
 
 ## Maintaining Access Tools Analysis
 
 <img width="350" height="500" alt="task2table" src="https://github.com/user-attachments/assets/3ab3c6b8-79b9-4d55-ad68-38f7aa5a520b" />
+
+Selecting the right persistence mechanism depends a lot on understanding the compromised environment's egress filtering and endpoint security. Weevely works best in situations where external web traffic is trusted. It effectively hides harmful commands in the large amount of standard HTTP traffic. On the other hand, if a network tightly controls outbound web traffic but allows DNS resolution, Dns2tcp takes advantage of this by turning the DNS protocol into a secret, two-way transport layer. Cryptcat offers complete point-to-point transport security. It needs open ports to work, and it is less able to deal with strict egress filtering compared to Dns2tcp. However, its use of Twofish encryption makes sure that extracted data is completely hidden from network monitoring and analysis.
+
+## Conclusions
+
+A successful penetration test requires a strong understanding of network protocols to simulate Advanced Persistent Threats (APTs) effectively. The Reconnaissance phase shapes the entire engagement. Tools like Recon-ng and DNSRecon collect open-source intelligence and map hidden infrastructure. Active scanners like Nmap and Hping3 find specific service vulnerabilities and bypass strict perimeter controls. Together, these tools provide the crucial information needed to identify key weaknesses.
+Once perimeter defenses are breached, the focus shifts to Maintaining Access. Persistence tools such as Weevely, Dns2tcp, and Cryptcat evade detection by exploiting the built-in trust of networks. They do this by hiding harmful payloads within regular web traffic, tunneling through DNS queries, or encrypting data streams. In the end, mastering both information gathering and stealthy persistence gives the practical knowledge needed to strengthen organizational defenses and improve resilience against modern cyberattacks.
+
 
 ## Reference
 
