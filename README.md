@@ -23,6 +23,26 @@ This assignment demonstrates the use of:
 - DNSRecon
 
 
+**Recon-ng**
+<img width="407" height="95" alt="Listener" src="https://github.com/user-attachments/assets/83393496-1fe4-46c2-8730-8a179256f192" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Task 2: Maintaining Access
 
 This assignment demonstrates the use of:
@@ -37,3 +57,20 @@ All tools were tested in Kali Linux Virtual Machine.
 Screenshots were taken during practical testing.
 
 References are credited below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
