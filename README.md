@@ -24,7 +24,6 @@ This assignment demonstrates the use of:
 ---
 
 ## Recon-ng
-
 **What it is**: A Python-based tool for gathering public information (OSINT).
 
 **The Interface**: Built to look and feel like Metasploit, making it easy for security pros to use.
