@@ -16,6 +16,9 @@ Programme: Master in Information Technology Management
 
 ## Task 1: Reconnaissance Tools in Kali Linux
 
+Reconnaissance is the first phase of the penetration testing. The tester collects the information about the targeted system or network before attempting any kind of attack. The objective is to understand the structure, open ports, running services and possible weakness of the target. There are two types of reconnaissance: passive and active. The information collected helps the tester plan the next steps more effectively. In this task, tools such as Recon-ng, Nmap, Hping3, and DNSRecon are used to perform information gathering and network scanning. 
+
+
 This assignment demonstrates the use of:
 - Recon-ng
 - Nmap
@@ -210,6 +213,9 @@ ___
 
 **Stealthy Identification**: Provides a method for identifying open ports that is less conspicuous than establishing a full TCP three-way handshake.
 
+___
+**Feature 3: Advanced Traceroute**
+
 <img width="648" height="432" alt="image" src="https://github.com/user-attachments/assets/3291b632-0354-459a-8be8-7278c820e2e1" />
 
 **Network Path Mapping**: Employs hping3 to conduct a traceroute, visualizing the specific route packets take to reach the target.
@@ -223,16 +229,64 @@ ___
 **Infrastructure Detection**: Facilitates the identification of the network route, aiding in the discovery of intermediate devices or potential firewalls.
 
 
-
-
 ## DNSRecon
 
+DNSRecon is a powerful script for active reconnaissance. It is designed to thoroughly query and explore the Domain Name System (DNS) infrastructure of a target organization. DNS acts as the main directory for the internet, and its records often disclose the internal setup of a corporate network. These records can outline the locations of mail servers, authentication points, and cloud infrastructure. Many organizations do not monitor DNS traffic for unusual patterns, giving attackers a subtle way to perform in-depth mapping.  
 
+**Feature 1: Standard Record Enumeration and SRV Discovery**
 
+<img width="700" height="464" alt="image" src="https://github.com/user-attachments/assets/745d167d-e1fa-47ed-ac3c-6599575a9341" />
 
+**Infrastructure Querying**: Executes dnsrecon -d nmap.org to systematically query the domain's DNS servers for essential infrastructure details.
+
+**IP Address Mapping**: Identifies A and AAAA records, which provide the direct mapping of the domain name to its specific IPv4 and IPv6 addresses.
+
+**Service Provider Discovery**: Locates MX (Mail Exchange) records to identify mail servers and NS (Name Server) records to find the domain's authoritative servers.
+
+**Security Configuration Audit**: Detects TXT records, which are often used for security protocols like the Sender Policy Framework (SPF) to prevent email spoofing.
+
+**Digital Footprint Mapping**: Compiles gather data to map the target's external digital presence, allowing the tester to identify potential entry points or third-party service providers.
+
+___
+**Feature 2: Reverse IP Lookup**
+
+<img width="806" height="219" alt="image" src="https://github.com/user-attachments/assets/a0c81b15-fa92-45d4-b846-c2f1982012de" />
+
+**Infrastructure Mapping**: Uses DNSRecon to perform a Reverse IP Lookup, a critical technique for discovering the underlying infrastructure of a target.
+
+**IP Range Scanning**: Executes the command dnsrecon -r 45.33.32.150-45.33.32.160 to scan a specific range of addresses for associated Pointer (PTR) records.
+
+**PTR Record Identification**: Translates numerical IP addresses into human-readable domain names by identifying these PTR records.
+
+**Asset Discovery**: Enables a penetration tester to find "neighboring" servers or hidden assets—such as scanme.nmap.org and web.discreet-logic.com—located on the same network block.
+
+**Environment Analysis**: Identifies related records to provide a clearer view of the target’s hosting environment and discover potential lateral entry points for further testing.
+
+___
+**Feature 3: Zone Transfer (AXFR) Exploitation**
+
+<img width="598" height="478" alt="image" src="https://github.com/user-attachments/assets/2d655646-ea74-4bd4-ac5b-580a29f83a48" />
+<img width="610" height="510" alt="image" src="https://github.com/user-attachments/assets/28b0642e-a3ae-4063-9ea2-5d6edb47b154" />
+<img width="714" height="580" alt="image" src="https://github.com/user-attachments/assets/04267cdb-27e4-4f37-a06b-627f46f4bdf1" />
+<img width="717" height="473" alt="image" src="https://github.com/user-attachments/assets/57ddd8e5-50aa-4936-8ac9-cb24b7b2cba9" />
+
+**Targeted AXFR Attempt**: Executes the command dnsrecon -d zonetransfer.me -t axfr to check if a domain's name servers are misconfigured to permit a full DNS database transfer.
+
+**Vulnerability Confirmation**: Identifies a critical security flaw when the terminal displays a "Zone Transfer was successful!!" message.
+
+**Infrastructure Mapping**: Reveals the complete internal and external DNS structure in a single request, including A records for subdomains like office, email, and vpn.
+
+**Service and Environment Discovery**: Locates CNAME records pointing to staging environments and MX records for the domain's mail servers.
+
+**Sensitive Metadata Exposure**: Uncovers administrative TXT records and HINFO records that reveal specific server operating systems, such as "Windows XP".
+
+**Strategic Reconnaissance**: Allows an attacker to map out key targets and identify network weaknesses without the need for individual, time-consuming brute-force lookups.
 
 
 ## Task 2: Maintaining Access
+
+Once a vulnerability is successfully exploited and access to a target system is gained, the main goal of the penetration test changes from breaking through the perimeter to maintaining access internally. Keeping access lets the security auditor maintain control over the compromised system, simulating an Advanced Persistent Threat (APT) that can survive system reboots, user logoffs, changing credentials, and regular security updates. Tools in this category must prioritize stealth, encryption, and disguising protocols to avoid egress filtering, stateful firewalls, and host-based intrusion detection systems that watch for unusual outbound network traffic.
+
 
 This assignment demonstrates the use of:
 • Powersploit
@@ -241,7 +295,64 @@ This assignment demonstrates the use of:
 • Dns2tcp
 • Cryptcat
 
+
 ## Powersploit
+
+<img width="552" height="394" alt="image" src="https://github.com/user-attachments/assets/6cf4e00b-67ba-4f1f-94b5-a69c291ca5a2" />
+
+
+This is the initial setup for using PowerSploit, a collection of Microsoft PowerShell modules used by penetration testers to maintain access and perform post-exploitation tasks on Windows systems. In this specific sequence, it is to navigate to the directory where the tool is stored and launch the PowerShell environment within Kali Linux to begin operation.
+
+**Feature 1: Privilege Escalation (PowerUp)**
+
+<img width="580" height="399" alt="image" src="https://github.com/user-attachments/assets/fc1f2671-42c7-4914-9d05-5900cdf107c8" />
+
+**Security Assessment**: Uses the PowerSploit tool to systematically identify security weaknesses and potential escalation vectors within a target Windows system.
+
+**Module Loading**: Executes Import-Module ./Privesc/PowerUp.ps1 to integrate the PowerUp module into the active PowerShell environment.
+
+**Misconfiguration Detection**: Leverages specialized functions within the module to discover common system misconfigurations that could allow standard users to obtain higher privileges.
+
+**Command Documentation**: Utilizes Get-Help Invoke-AllChecks to review the technical details, syntax, and usage instructions for the primary scanning function.
+
+**Vulnerability Scanning**: Employs Invoke-AllChecks to audit the system for critical flaws, including weak service permissions, unquoted service paths, and writable registry keys.
+
+**Access Elevation**: Targets vulnerabilities that can be exploited to secure administrator-level access, granting the tester full control over the compromised environment.
+
+**Persistence Support**: Facilitates the "maintaining access" phase by ensuring the attacker can bypass restricted user environments to maintain long-term control.
+
+___
+**Feature 2: Persistence Mechanism**
+
+<img width="605" height="248" alt="image" src="https://github.com/user-attachments/assets/87bddd8a-9de4-4ad7-9c97-559ff5e09bd5" />
+
+**Long-Term Control**: Employs the Persistence feature of the PowerSploit framework to ensure sustained access to a compromised Windows environment.
+
+**Module Integration**: Executes the command Import-Module ./Persistence/Persistence.psm1 to load specialized persistence tools into the active PowerShell session.
+
+**Automated Execution**: Leverages functions designed to create triggers that automatically execute malicious code during system startups or user logins.
+
+**Function Discovery**: Utilizes Get-Command -Module Persistence to list all available tools within the module, such as Add-Persistence and Install-SSP.
+
+**Configuration Options:** Provides various methods for establishing a foothold through functions like New-ElevatedPersistenceOption and New-UserPersistenceOption.
+
+**Operational Resilience**: Ensures that access is preserved even after system reboots or user logouts, eliminating the need to repeat the initial exploitation.
+
+___
+**Feature 3: Code Execution (Antivirus Bypass)**
+
+<img width="578" height="489" alt="image" src="https://github.com/user-attachments/assets/472a237d-c946-469d-a0ee-32d175e3bac7" />
+
+**Script Deployment:** Uses the command Import-Module ./CodeExecution/Invoke-Shellcode.ps1 to load a specialized script into the environment.
+
+**Access Maintenance:** Employs shellcode injection as a primary technique to ensure sustained control over the compromised system.
+
+**Technical Guidance:** Executes Get-Help Invoke-Shellcode -Examples to retrieve practical usage documentation for the function.
+
+**Process Injection:** Provides the capability to inject malicious code into a specific Process ID (PID) or directly into the active PowerShell session.
+
+**Execution Strategy:** Helps the penetration tester understand the correct parameters for successful code execution to avoid detection.
+
 
 ## Webshells
 
