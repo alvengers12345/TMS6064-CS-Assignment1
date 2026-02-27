@@ -61,8 +61,6 @@ This assignment demonstrates the use of:
 ___
 **Feature 1: Workspace Management** 
 
-<img width="756" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
-
 **Storage**: Uses an embedded SQLite database to automatically save everything you find.
 
 **Workspaces**: Acts like "folders" to keep different projects or clients completely separate.
@@ -71,10 +69,25 @@ ___
 
 **Efficiency**: Because it's a database, you can run complex queries to find specific patterns across all the data you've gathered.
 
+<img width="756" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
 
+**The Command**: Running workspaces create target1 sets up a fresh, isolated environment.
 
+**Data Separation**: It creates a dedicated SQLite database specifically for "target1."
 
+**Professionalism**: This prevents "data bleed," ensuring that IPs, emails, and hosts from one client never mix with another.
 
+**Context**: Once created, your command prompt will change to show you are now working inside that specific workspace.
+
+<img width="756" height="214" alt="image" src="https://github.com/user-attachments/assets/fcca2079-1f81-4f26-ba8b-e660dd2c6461" />
+
+**Switching Context**: The command workspaces select target1 activates your specific project environment.
+
+**Visual Feedback**: Your terminal prompt changes (e.g., from [default] to [target1]), so you always know exactly which target you are currently modifying.
+
+**Inventory Management**: Running workspaces list displays a table of all your projects.
+
+**Audit Trail**: The list includes last modification dates, helping you track when you last worked on a specific investigation.
 
 
 
