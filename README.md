@@ -601,9 +601,6 @@ U.S. Department of Defense. (2021). DoD cyber table top guide (v2). Chief Inform
 All tools were tested in Kali Linux Virtual Machine.
 Screenshots were taken during practical testing.
 
-References are credited below.
-
-
 
 
 
