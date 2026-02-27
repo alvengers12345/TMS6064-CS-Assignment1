@@ -34,7 +34,7 @@ This assignment demonstrates the use of:
 **The Benefit**:It centralizes all your findings into one searchable database, saving hours of manual research.
 
 
-<img width="746" height="296" alt="image" src="https://github.com/user-attachments/assets/c16f3d69-7e26-439a-aae4-02a485535570" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/c16f3d69-7e26-439a-aae4-02a485535570" />
 
 **Launch**: Type recon-ng in the Kali Linux terminal to enter the interactive shell.
 
@@ -44,7 +44,7 @@ This assignment demonstrates the use of:
 
 **Next Step**: You can usually start with "passive" modules that scrape public data without needing any keys at all.
 
-<img width="725" height="470" alt="image" src="https://github.com/user-attachments/assets/e1b91d2b-c854-4667-9d9a-3557744f049d" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/e1b91d2b-c854-4667-9d9a-3557744f049d" />
 
 **The Welcome**: When you launch, you'll see ASCII art and a summary of all available modules.
 
@@ -69,7 +69,7 @@ ___
 
 **Efficiency**: Because it's a database, you can run complex queries to find specific patterns across all the data you've gathered.
 
-<img width="756" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
+<img width="476" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
 
 **The Command**: Running workspaces create target1 sets up a fresh, isolated environment.
 
@@ -79,7 +79,7 @@ ___
 
 **Context**: Once created, your command prompt will change to show you are now working inside that specific workspace.
 
-<img width="756" height="214" alt="image" src="https://github.com/user-attachments/assets/fcca2079-1f81-4f26-ba8b-e660dd2c6461" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/fcca2079-1f81-4f26-ba8b-e660dd2c6461" />
 
 **Switching Context**: The command "workspaces select target1" activates your specific project environment.
 
@@ -92,7 +92,7 @@ ___
 ___
 **Feature 2: Marketplace and Modular Architecture**
 
-<img width="527" height="330" alt="image" src="https://github.com/user-attachments/assets/3ce03f9e-1cdb-446d-a5bb-ae28bcc29645" />
+<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/3ce03f9e-1cdb-446d-a5bb-ae28bcc29645" />
 
 **The Command**: Running "marketplace install all" downloads the complete library of Recon-ng modules at once.
 
