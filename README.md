@@ -59,9 +59,17 @@ This assignment demonstrates the use of:
 **Customization**: The modular setup means you only load the specific scripts you need for your current target, keeping things clean and efficient.
 
 ___
+**Feature 1: Workspace Management** 
 
+<img width="756" height="44" alt="image" src="https://github.com/user-attachments/assets/708702b1-51a4-4d9d-8596-4482604c2f46" />
 
+**Storage**: Uses an embedded SQLite database to automatically save everything you find.
 
+**Workspaces**: Acts like "folders" to keep different projects or clients completely separate.
+
+**Isolation**: This structure prevents data contamination, ensuring info from "Target A" never accidentally mixes with "Target B."
+
+**Efficiency**: Because it's a database, you can run complex queries to find specific patterns across all the data you've gathered.
 
 
 
