@@ -115,6 +115,7 @@ ___
 ___
 **Feature 3: Automated Domain Enumeration**
 
+<img width="755" height="508" alt="image" src="https://github.com/user-attachments/assets/c0351a5d-e067-4b5c-b8c1-c02cdef1e46f" />
 
 
 
